@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post App</title>
+  <link rel="stylesheet" href="/style/index.css">
+
+</head>
+<body>
+  <div class="appTitle">
+
+    <h1>This is Post app </h1>
+
+  </div>
+
+  <div class="inputForm">
+
+
+
+  <form action="/data" method="post">
+
+    <label>Enter your name as you are a author: </label><br>
+    <input type="text", name="name" required>
+    
+
+    <h2>About Post</h2>
+    <label>Post Title</label>
+    <input type="text" name="title" required><br><br>
+    <label>Content</label>
+    <textarea name="content" required></textarea><br>
+  <button type="submit">Submit</button>
+  </form>
+  </div>
+
+ <div class="allPosts">
+
+    <% allPosts.forEach((ele)=>{%>
+      <h3><%= ele.content %> <p><%= ele.author.name%>...</p></h3>
+      
+    <%}) %>
+
+
+ </div>
+
+
+
+</body>
+</html>

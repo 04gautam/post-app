@@ -1,0 +1,19 @@
+await User.deleteMany({})
+    await Post.deleteMany({})
+
+    const user = new User({
+      name: "gautam"
+    })
+
+    const post = new Post({
+      title: "second Post",
+      content: "This is my first post: ",
+      author: user._id
+    });
+
+   await user.save()
+   await post.save()
+
+  // const letfine = await Post.findOne({title: "second Post"}).populate("author")
+
+  console.log(await (post).populate("author"))
