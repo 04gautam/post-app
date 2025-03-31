@@ -1,4 +1,4 @@
-Full Stack Post Application
+#Full Stack Post Application
 Welcome to the Full Stack Post Application! This is a simple yet powerful application that allows users to create posts and associate them with authors. It is built using a full-stack approach, combining both frontend and backend technologies to provide a seamless user experience.
 
 Features
